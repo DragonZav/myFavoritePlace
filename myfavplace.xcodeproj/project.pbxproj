@@ -12,6 +12,7 @@
 		1E1AAB4B1C235F83005511FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1AAB491C235F83005511FA /* Main.storyboard */; };
 		1E1AAB4D1C235F83005511FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1AAB4C1C235F83005511FA /* Assets.xcassets */; };
 		1E1AAB501C235F83005511FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1AAB4E1C235F83005511FA /* LaunchScreen.storyboard */; };
+		1E1AAB581C237FBF005511FA /* RoundOrangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1AAB571C237FBF005511FA /* RoundOrangeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1E1AAB4C1C235F83005511FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E1AAB4F1C235F83005511FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1AAB511C235F83005511FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E1AAB571C237FBF005511FA /* RoundOrangeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundOrangeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				1E1AAB451C235F83005511FA /* AppDelegate.swift */,
 				1E1AAB471C235F83005511FA /* ViewController.swift */,
+				1E1AAB571C237FBF005511FA /* RoundOrangeButton.swift */,
 				1E1AAB491C235F83005511FA /* Main.storyboard */,
 				1E1AAB4C1C235F83005511FA /* Assets.xcassets */,
 				1E1AAB4E1C235F83005511FA /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E1AAB481C235F83005511FA /* ViewController.swift in Sources */,
+				1E1AAB581C237FBF005511FA /* RoundOrangeButton.swift in Sources */,
 				1E1AAB461C235F83005511FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +256,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.christopheraugg.myfavplace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -263,6 +268,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.christopheraugg.myfavplace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

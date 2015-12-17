@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    /*
+       The Hawaiian Lady clipart: www.openclipart.com
+       Artist: liftarn
+    */
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
