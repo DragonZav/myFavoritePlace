@@ -92,6 +92,9 @@
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                         </variation>
+                                        <connections>
+                                            <segue destination="b9a-5p-lJQ" kind="show" id="Aim-sH-LR9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-wD-WyE" customClass="RoundOrangeButton" customModule="myfavplace" customModuleProvider="target">
                                         <rect key="frame" x="120" y="0.0" width="115" height="25"/>
@@ -130,9 +133,124 @@
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="MGB-05-IoX">
+            <objects>
+                <viewController id="b9a-5p-lJQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fRC-O7-pO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ENT-Ac-3QR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lp4-Ud-ubT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oahu" translatesAutoresizingMaskIntoConstraints="NO" id="nX1-0O-J9M">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="8V5-ca-6wk">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT OAHU HAWAII" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCt-gr-inR">
+                                <rect key="frame" x="179" y="66" width="243" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Tvg-dL-6B5"/>
+                                    <constraint firstAttribute="width" constant="243" id="bMz-rr-PKe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="1RI-Uq-UFN">
+                                <rect key="frame" x="20" y="163" width="560" height="417"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-id-xea">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="POPULATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBW-lH-ToR">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="29"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="953,207" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQP-8Y-QVW">
+                                                <rect key="frame" x="0.0" y="29" width="62" height="20"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gur-dK-ZQY">
+                                        <rect key="frame" x="0.0" y="58" width="560" height="360"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE HEART OF HAWAII" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hge-sr-X9Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="258" height="26"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="70" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATb-fY-s5I">
+                                                <rect key="frame" x="0.0" y="28" width="560" height="332"/>
+                                                <mutableString key="text">Sometimes called “The Gathering Place,” Oahu certainly lives up to its name. The third largest Hawaiian island is home to the majority of Hawaii’s diverse population, a fusion of east and west cultures rooted in the values and traditions of the Native Hawaiian people. It’s this fundamental contrast between the ancient and the modern that makes discovering Oahu so enjoyable.
+
+The clear blue waters of Kailua Beach meet the metropolitan cityscapes of Honolulu. The historic architecture of Iolani Palace meets the timeless memorials of Pearl Harbor. The big city of Waikiki meets the small town of Haleiwa on the North Shore. Whether you’re hiking atop iconic Leahi (Diamond Head), enjoying some of Hawaii’s best shopping, or simply unwinding on the sands of the island’s beautiful beaches, you’ll find variety at every turn on Oahu.
+</mutableString>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" spacing="10"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf8-Ce-k4V">
+                                <rect key="frame" x="20" y="40" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ENT-Ac-3QR" firstAttribute="top" secondItem="1RI-Uq-UFN" secondAttribute="bottom" constant="20" id="44B-qd-JvC">
+                                <variation key="heightClass=compact" constant="5"/>
+                            </constraint>
+                            <constraint firstItem="1RI-Uq-UFN" firstAttribute="top" secondItem="nX1-0O-J9M" secondAttribute="bottom" constant="18" id="9L5-eu-csC">
+                                <variation key="heightClass=compact" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="NCt-gr-inR" firstAttribute="centerX" secondItem="Lp4-Ud-ubT" secondAttribute="centerX" id="BRm-i7-xQ6"/>
+                            <constraint firstItem="1RI-Uq-UFN" firstAttribute="leading" secondItem="Lp4-Ud-ubT" secondAttribute="leading" constant="20" id="D1s-7l-inU"/>
+                            <constraint firstItem="Vf8-Ce-k4V" firstAttribute="top" secondItem="fRC-O7-pO7" secondAttribute="bottom" constant="20" id="Dcd-wt-dWa"/>
+                            <constraint firstItem="nX1-0O-J9M" firstAttribute="top" secondItem="Lp4-Ud-ubT" secondAttribute="top" id="H61-hR-xga"/>
+                            <constraint firstAttribute="trailing" secondItem="nX1-0O-J9M" secondAttribute="trailing" id="IoT-iA-JBS"/>
+                            <constraint firstAttribute="trailing" secondItem="1RI-Uq-UFN" secondAttribute="trailing" constant="20" id="KfT-4A-Usx"/>
+                            <constraint firstItem="nX1-0O-J9M" firstAttribute="leading" secondItem="Lp4-Ud-ubT" secondAttribute="leading" id="SNP-Sq-KKD"/>
+                            <constraint firstItem="Vf8-Ce-k4V" firstAttribute="leading" secondItem="Lp4-Ud-ubT" secondAttribute="leading" constant="20" id="hiJ-PR-XWT"/>
+                            <constraint firstItem="NCt-gr-inR" firstAttribute="top" secondItem="fRC-O7-pO7" secondAttribute="bottom" constant="46" id="wD1-m4-PF5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h88-NL-DBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1012" y="445"/>
+        </scene>
     </scenes>
     <resources>
         <image name="OahuHawaii" width="1024" height="768"/>
+        <image name="oahu" width="1200" height="400"/>
         <image name="wthawaiilady-300px" width="190" height="300"/>
     </resources>
 </document>

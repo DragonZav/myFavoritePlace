@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     /*
        The Hawaiian Lady clipart: www.openclipart.com
        Artist: liftarn
+    
+       About information: www.gohawaii.com, 
     */
     
     
