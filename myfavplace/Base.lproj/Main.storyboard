@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -133,6 +134,9 @@
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                         </variation>
+                                        <connections>
+                                            <segue destination="hhs-tU-V8K" kind="show" id="S4v-uK-2Cc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -152,7 +156,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="429"/>
+            <point key="canvasLocation" x="84" y="563"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zkL-BJ-bS7">
+            <objects>
+                <viewController id="hhs-tU-V8K" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a0N-ZV-Zv9"/>
+                        <viewControllerLayoutGuide type="bottom" id="NNd-e1-oN8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a8e-1Q-KmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eS2-dg-z0n">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waimea" translatesAutoresizingMaskIntoConstraints="NO" id="Nyi-AW-RNm">
+                                        <rect key="frame" x="300" y="382" width="300" height="190"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-kd-srb">
+                                        <rect key="frame" x="0.0" y="382" width="300" height="190"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="XKU-kf-qxF">
+                                        <rect key="frame" x="300" y="191" width="300" height="191"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sailing" translatesAutoresizingMaskIntoConstraints="NO" id="mPW-Jz-0IB">
+                                        <rect key="frame" x="0.0" y="191" width="300" height="191"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pipeline" translatesAutoresizingMaskIntoConstraints="NO" id="a2R-fn-ko4">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="191"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiamondHead" translatesAutoresizingMaskIntoConstraints="NO" id="dsV-i0-VRH">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="191"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QW9-kd-srb" secondAttribute="width" multiplier="2" id="03m-Md-Sg7"/>
+                                    <constraint firstAttribute="width" secondItem="mPW-Jz-0IB" secondAttribute="width" multiplier="2" id="2Rd-A5-Aj3"/>
+                                    <constraint firstItem="mPW-Jz-0IB" firstAttribute="leading" secondItem="eS2-dg-z0n" secondAttribute="leading" id="AjO-SN-Dg5"/>
+                                    <constraint firstAttribute="height" secondItem="a2R-fn-ko4" secondAttribute="height" multiplier="3" id="G8s-31-36Q"/>
+                                    <constraint firstItem="dsV-i0-VRH" firstAttribute="top" secondItem="eS2-dg-z0n" secondAttribute="top" id="H7E-gs-wG3"/>
+                                    <constraint firstAttribute="height" constant="572" id="Iaq-uA-QU7"/>
+                                    <constraint firstAttribute="height" secondItem="QW9-kd-srb" secondAttribute="height" multiplier="3" id="KIv-co-ZlK"/>
+                                    <constraint firstAttribute="width" constant="600" id="MFi-k6-65v"/>
+                                    <constraint firstItem="mPW-Jz-0IB" firstAttribute="top" secondItem="dsV-i0-VRH" secondAttribute="bottom" id="O2C-jF-vdf"/>
+                                    <constraint firstItem="a2R-fn-ko4" firstAttribute="top" secondItem="eS2-dg-z0n" secondAttribute="top" id="Oyc-iX-5IE"/>
+                                    <constraint firstAttribute="width" secondItem="dsV-i0-VRH" secondAttribute="width" multiplier="2" id="RTq-Vm-IwD"/>
+                                    <constraint firstAttribute="width" secondItem="a2R-fn-ko4" secondAttribute="width" multiplier="2" id="TBR-2Y-agI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nyi-AW-RNm" secondAttribute="trailing" id="Wcw-jL-KVD"/>
+                                    <constraint firstItem="QW9-kd-srb" firstAttribute="leading" secondItem="eS2-dg-z0n" secondAttribute="leading" id="Wtc-Nu-DVN"/>
+                                    <constraint firstAttribute="height" secondItem="mPW-Jz-0IB" secondAttribute="height" multiplier="3" id="YZq-bz-lIC"/>
+                                    <constraint firstAttribute="trailing" secondItem="XKU-kf-qxF" secondAttribute="trailing" id="Yfe-7F-h1H"/>
+                                    <constraint firstAttribute="trailing" secondItem="a2R-fn-ko4" secondAttribute="trailing" id="avq-Ll-frG"/>
+                                    <constraint firstItem="dsV-i0-VRH" firstAttribute="leading" secondItem="eS2-dg-z0n" secondAttribute="leading" id="dVT-a8-Djm"/>
+                                    <constraint firstAttribute="width" secondItem="XKU-kf-qxF" secondAttribute="width" multiplier="2" id="ekU-1r-Jgi"/>
+                                    <constraint firstItem="XKU-kf-qxF" firstAttribute="top" secondItem="a2R-fn-ko4" secondAttribute="bottom" id="ivk-Kw-efL"/>
+                                    <constraint firstAttribute="height" secondItem="dsV-i0-VRH" secondAttribute="height" multiplier="3" id="jIh-gi-qcG"/>
+                                    <constraint firstAttribute="width" secondItem="Nyi-AW-RNm" secondAttribute="width" multiplier="2" id="jiz-FW-VUz"/>
+                                    <constraint firstAttribute="height" secondItem="XKU-kf-qxF" secondAttribute="height" multiplier="3" id="jqH-lF-KB5"/>
+                                    <constraint firstAttribute="height" secondItem="Nyi-AW-RNm" secondAttribute="height" multiplier="3" id="lwg-mP-Svd"/>
+                                    <constraint firstAttribute="bottom" secondItem="QW9-kd-srb" secondAttribute="bottom" id="qS5-qr-Kkv"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nyi-AW-RNm" secondAttribute="bottom" id="x1F-eL-q07"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eS2-dg-z0n" firstAttribute="top" secondItem="a0N-ZV-Zv9" secondAttribute="bottom" constant="8" id="1Al-Me-Asa"/>
+                            <constraint firstItem="NNd-e1-oN8" firstAttribute="top" secondItem="eS2-dg-z0n" secondAttribute="bottom" id="gH5-ze-IUe"/>
+                            <constraint firstAttribute="trailing" secondItem="eS2-dg-z0n" secondAttribute="trailing" id="lrA-DL-RId"/>
+                            <constraint firstItem="eS2-dg-z0n" firstAttribute="leading" secondItem="a8e-1Q-KmQ" secondAttribute="leading" id="psO-XZ-WYs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNV-IZ-d0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="1010"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MGB-05-IoX">
@@ -207,7 +289,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="88" height="18"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="11"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="25"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="35"/>
@@ -228,10 +310,10 @@
                                                     <rect key="frame" x="0.0" y="18" width="44" height="19"/>
                                                 </variation>
                                                 <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="20" width="62" height="20"/>
+                                                    <rect key="frame" x="0.0" y="25" width="62" height="25"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="11" width="62" height="11"/>
+                                                    <rect key="frame" x="0.0" y="25" width="62" height="25"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="35"/>
@@ -242,10 +324,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="88" height="37"/>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="124" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="50"/>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="124" height="22"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="50"/>
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gur-dK-ZQY">
@@ -268,7 +350,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="220" height="25"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="25"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="35"/>
@@ -288,10 +370,10 @@ The clear blue waters of Kailua Beach meet the metropolitan cityscapes of Honolu
                                                     <rect key="frame" x="0.0" y="18" width="584" height="197"/>
                                                 </variation>
                                                 <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="20" width="384" height="392"/>
+                                                    <rect key="frame" x="0.0" y="25" width="384" height="376"/>
                                                 </variation>
                                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="11" width="384" height="218"/>
+                                                    <rect key="frame" x="0.0" y="25" width="384" height="176"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=regular">
                                                     <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="35"/>
@@ -302,10 +384,10 @@ The clear blue waters of Kailua Beach meet the metropolitan cityscapes of Honolu
                                             <rect key="frame" x="0.0" y="42" width="584" height="215"/>
                                         </variation>
                                         <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="45" width="384" height="412"/>
+                                            <rect key="frame" x="0.0" y="55" width="384" height="401"/>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="27" width="384" height="229"/>
+                                            <rect key="frame" x="0.0" y="55" width="384" height="201"/>
                                         </variation>
                                     </stackView>
                                 </subviews>
@@ -336,12 +418,18 @@ The clear blue waters of Kailua Beach meet the metropolitan cityscapes of Honolu
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h88-NL-DBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="429"/>
+            <point key="canvasLocation" x="966" y="343"/>
         </scene>
     </scenes>
     <resources>
+        <image name="DiamondHead" width="1308" height="855"/>
         <image name="OahuHawaii" width="1024" height="768"/>
+        <image name="Pipeline" width="1000" height="667"/>
+        <image name="images" width="259" height="194"/>
+        <image name="night" width="300" height="168"/>
         <image name="oahu" width="1200" height="400"/>
+        <image name="sailing" width="265" height="190"/>
+        <image name="waimea" width="567" height="850"/>
         <image name="wthawaiilady-300px" width="190" height="300"/>
     </resources>
 </document>
