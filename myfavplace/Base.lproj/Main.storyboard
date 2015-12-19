@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="84" y="563"/>
         </scene>
-        <!--View Controller-->
+        <!--PixVC-->
         <scene sceneID="zkL-BJ-bS7">
             <objects>
-                <viewController id="hhs-tU-V8K" sceneMemberID="viewController">
+                <viewController id="hhs-tU-V8K" customClass="pixVC" customModule="myfavplace" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a0N-ZV-Zv9"/>
                         <viewControllerLayoutGuide type="bottom" id="NNd-e1-oN8"/>
@@ -191,13 +191,25 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiamondHead" translatesAutoresizingMaskIntoConstraints="NO" id="dsV-i0-VRH">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="191"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqY-3R-ODI">
+                                        <rect key="frame" x="8" y="8" width="37" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goBack:" destination="hhs-tU-V8K" eventType="touchUpInside" id="q9C-1w-r4L"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QW9-kd-srb" secondAttribute="width" multiplier="2" id="03m-Md-Sg7"/>
                                     <constraint firstAttribute="width" secondItem="mPW-Jz-0IB" secondAttribute="width" multiplier="2" id="2Rd-A5-Aj3"/>
+                                    <constraint firstItem="nqY-3R-ODI" firstAttribute="top" secondItem="eS2-dg-z0n" secondAttribute="top" constant="8" id="2e8-uj-gIU"/>
                                     <constraint firstItem="mPW-Jz-0IB" firstAttribute="leading" secondItem="eS2-dg-z0n" secondAttribute="leading" id="AjO-SN-Dg5"/>
                                     <constraint firstAttribute="height" secondItem="a2R-fn-ko4" secondAttribute="height" multiplier="3" id="G8s-31-36Q"/>
+                                    <constraint firstItem="nqY-3R-ODI" firstAttribute="leading" secondItem="eS2-dg-z0n" secondAttribute="leading" constant="8" id="GuA-Wt-ORh"/>
                                     <constraint firstItem="dsV-i0-VRH" firstAttribute="top" secondItem="eS2-dg-z0n" secondAttribute="top" id="H7E-gs-wG3"/>
                                     <constraint firstAttribute="height" constant="572" id="Iaq-uA-QU7"/>
                                     <constraint firstAttribute="height" secondItem="QW9-kd-srb" secondAttribute="height" multiplier="3" id="KIv-co-ZlK"/>
@@ -236,10 +248,10 @@
             </objects>
             <point key="canvasLocation" x="973" y="1010"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailVC-->
         <scene sceneID="MGB-05-IoX">
             <objects>
-                <viewController id="b9a-5p-lJQ" sceneMemberID="viewController">
+                <viewController id="b9a-5p-lJQ" customClass="DetailVC" customModule="myfavplace" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fRC-O7-pO7"/>
                         <viewControllerLayoutGuide type="bottom" id="ENT-Ac-3QR"/>
@@ -398,6 +410,9 @@ The clear blue waters of Kailua Beach meet the metropolitan cityscapes of Honolu
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goBack:" destination="b9a-5p-lJQ" eventType="touchUpInside" id="AqP-Qv-RQP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
